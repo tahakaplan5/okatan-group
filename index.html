@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okatan Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:black;
+color:white;
+scroll-behavior:smooth;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+color:#d4af37;
+font-size:24px;
+font-weight:600;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:100px 50px;
+}
+
+.hero{
+background:url('projeler.jpg') center/cover no-repeat;
+text-align:center;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:60px;
+color:#d4af37;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+}
+
+.projects{
+background:#111;
+flex-direction:column;
+}
+
+.projects h2{
+color:#d4af37;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+width:100%;
+max-width:1200px;
+}
+
+.project{
+height:200px;
+background:#222;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid #333;
+transition:0.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+border-color:#d4af37;
+}
+
+.sectors{
+flex-direction:column;
+background:black;
+}
+
+.sectors h2{
+color:#d4af37;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.sector-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+width:100%;
+}
+
+.sector{
+border:1px solid #333;
+padding:40px;
+text-align:center;
+transition:0.3s;
+}
+
+.sector:hover{
+border-color:#d4af37;
+transform:translateY(-5px);
+}
+
+.about{
+background:#111;
+text-align:center;
+flex-direction:column;
+}
+
+.about h2{
+color:#d4af37;
+font-size:40px;
+margin-bottom:20px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">OKATAN GROUP</div>
+
+<nav>
+<a href="#projeler">Projeler</a>
+<a href="#sektorler">Sektörler</a>
+<a href="#hakkimizda">Hakkımızda</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>OKATAN GROUP</h1>
+<p>İnşaat • Otomotiv • Taşımacılık</p>
+
+</section>
+
+
+<section class="projects" id="projeler">
+
+<h2>Yaptığımız Projeler</h2>
+
+<div class="project-grid">
+
+<div class="project">Proje 1</div>
+<div class="project">Proje 2</div>
+<div class="project">Proje 3</div>
+<div class="project">Proje 4</div>
+
+</div>
+
+</section>
+
+
+<section class="sectors" id="sektorler">
+
+<h2>Sektörlerimiz</h2>
+
+<div class="sector-grid">
+
+<div class="sector">
+<h3>İnşaat</h3>
+<p>Modern yapı ve altyapı projeleri.</p>
+</div>
+
+<div class="sector">
+<h3>Otomotiv</h3>
+<p>Güvenilir araç alım satım hizmetleri.</p>
+</div>
+
+<div class="sector">
+<h3>Taşımacılık</h3>
+<p>Hızlı ve güvenilir lojistik çözümleri.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="about" id="hakkimizda">
+
+<h2>Hakkımızda</h2>
+
+<p>
+Şirketimiz hakkında bilgiler buraya eklenecektir.
+</p>
+
+</section>
+
+
+<footer>
+
+© 2026 Okatan Group
+
+</footer>
+
+</body>
+</html>
