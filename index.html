@@ -1,11 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Okatan Group</title>
-<img src="okatangrp.jpeg" width="120">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,12 +14,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
 background:black;
 color:white;
+font-family:Montserrat;
 scroll-behavior:smooth;
 }
 
@@ -27,24 +28,16 @@ position:fixed;
 top:0;
 width:100%;
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
+justify-content:center;
+padding:20px;
 background:rgba(0,0,0,0.7);
 backdrop-filter:blur(10px);
 z-index:1000;
 }
 
-.logo{
-color:#d4af37;
-font-size:24px;
-font-weight:600;
-letter-spacing:2px;
-}
-
 nav a{
 color:white;
-margin-left:25px;
+margin:0 20px;
 text-decoration:none;
 font-size:14px;
 transition:0.3s;
@@ -59,41 +52,44 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:100px 50px;
+flex-direction:column;
+padding:80px 20px;
+text-align:center;
 }
 
-.hero{
-background:url('projeler.jpg') center/cover no-repeat;
-text-align:center;
-flex-direction:column;
+.hero img{
+width:220px;
+margin-bottom:30px;
 }
 
 .hero h1{
-font-size:60px;
+font-family:Orbitron;
+letter-spacing:6px;
 color:#d4af37;
+font-size:48px;
 }
 
 .hero p{
-margin-top:15px;
-font-size:18px;
+margin-top:10px;
+color:#aaa;
 }
 
 .projects{
 background:#111;
-flex-direction:column;
 }
 
 .projects h2{
+font-family:Orbitron;
 color:#d4af37;
+font-size:36px;
 margin-bottom:40px;
-font-size:40px;
 }
 
 .project-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-width:100%;
+gap:30px;
+width:90%;
 max-width:1200px;
 }
 
@@ -104,62 +100,57 @@ display:flex;
 align-items:center;
 justify-content:center;
 border:1px solid #333;
-transition:0.4s;
+transition:0.3s;
 }
 
 .project:hover{
-transform:scale(1.05);
 border-color:#d4af37;
+transform:scale(1.05);
 }
 
 .sectors{
-flex-direction:column;
 background:black;
 }
 
 .sectors h2{
+font-family:Orbitron;
 color:#d4af37;
-font-size:40px;
+font-size:36px;
 margin-bottom:40px;
 }
 
-.sector-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-max-width:1200px;
-width:100%;
+.sector-list{
+max-width:800px;
+width:90%;
 }
 
 .sector{
-border:1px solid #333;
-padding:40px;
-text-align:center;
-transition:0.3s;
+border-bottom:1px solid #333;
+padding:20px;
+font-size:18px;
+letter-spacing:1px;
 }
 
 .sector:hover{
-border-color:#d4af37;
-transform:translateY(-5px);
+color:#d4af37;
 }
 
 .about{
 background:#111;
-text-align:center;
-flex-direction:column;
 }
 
 .about h2{
+font-family:Orbitron;
 color:#d4af37;
-font-size:40px;
 margin-bottom:20px;
+font-size:36px;
 }
 
 footer{
 background:black;
-text-align:center;
 padding:30px;
 color:#777;
+text-align:center;
 }
 
 </style>
@@ -168,8 +159,6 @@ color:#777;
 <body>
 
 <header>
-
-<div class="logo">OKATAN GROUP</div>
 
 <nav>
 <a href="#projeler">Projeler</a>
@@ -182,8 +171,11 @@ color:#777;
 
 <section class="hero">
 
+<img src="logo.png" alt="Okatan Group Logo">
+
 <h1>OKATAN GROUP</h1>
-<p>İnşaat • Otomotiv • Taşımacılık</p>
+
+<p>Kurumsal Ticaret ve Hizmet Şirketi</p>
 
 </section>
 
@@ -208,22 +200,14 @@ color:#777;
 
 <h2>Sektörlerimiz</h2>
 
-<div class="sector-grid">
+<div class="sector-list">
 
-<div class="sector">
-<h3>İnşaat</h3>
-<p>Modern yapı ve altyapı projeleri.</p>
-</div>
-
-<div class="sector">
-<h3>Otomotiv</h3>
-<p>Güvenilir araç alım satım hizmetleri.</p>
-</div>
-
-<div class="sector">
-<h3>Taşımacılık</h3>
-<p>Hızlı ve güvenilir lojistik çözümleri.</p>
-</div>
+<div class="sector">Kimya ve Tekstil Sanayi Ticaret</div>
+<div class="sector">İhracat – İthalat ve Ticaret</div>
+<div class="sector">İnşaat ve Gayrimenkul</div>
+<div class="sector">Oto Alım Satım</div>
+<div class="sector">Kurumsal Şirketlere Oto Kiralama</div>
+<div class="sector">Sigorta Acenteliği Hizmetleri</div>
 
 </div>
 
@@ -235,7 +219,7 @@ color:#777;
 <h2>Hakkımızda</h2>
 
 <p>
-Şirketimiz hakkında bilgiler buraya eklenecektir.
+Şirketimiz hakkında detaylı bilgiler yakında burada yer alacaktır.
 </p>
 
 </section>
@@ -249,3 +233,4 @@ color:#777;
 
 </body>
 </html>
+```
